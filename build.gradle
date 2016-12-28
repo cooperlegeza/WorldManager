@@ -16,7 +16,7 @@ buildscript {
 }
 
 version "0.1"
-group "agilityblogger"
+group "worldManager"
 
 apply plugin:"eclipse"
 apply plugin:"idea"

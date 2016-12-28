@@ -50,7 +50,7 @@ environments:
 grails:
     profile: angular
     codegen:
-        defaultPackage: agilityblogger
+        defaultPackage: worldManager
     spring:
         transactionManagement:
             proxies: false

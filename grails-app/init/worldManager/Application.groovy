@@ -1,4 +1,4 @@
-package agilityblogger
+package worldManager
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

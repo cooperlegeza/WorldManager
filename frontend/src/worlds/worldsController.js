@@ -1,5 +1,8 @@
 function worldsController(){
-    let worlds = 10;
+    'ngInject';
+
+    const vm = this;
+    vm.ten = 10;
 }
 
-export default worldsController();
+export default worldsController;

@@ -1,4 +1,4 @@
-package agilityblogger
+package worldManager
 
 class UrlMappings {
   static mappings = {
