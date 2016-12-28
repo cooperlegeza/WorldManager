@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.craigburke.angular:angular-template-asset-pipeline:2.2.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.craigburke.angular/angular-template-asset-pipeline/2.2.6/15ef5760e799cae5a883390ac8085c8f17a99d8f/angular-template-asset-pipeline-2.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.craigburke.angular/angular-template-asset-pipeline/2.2.6/8814a24d3c1a07e983cb4b1402ba8849294cdd7e/angular-template-asset-pipeline-2.2.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

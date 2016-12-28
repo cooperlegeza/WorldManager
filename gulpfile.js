@@ -26,7 +26,7 @@ function logError(error) {
 }
 
 gulp.task('scripts', function() {
-  var bundler = watchify(browserify('./frontend/src/agilityBloggerApp.js', {
+  var bundler = watchify(browserify('./frontend/src/world-manager-app.js', {
       debug: true,
       paths: ['./node_modules', './frontend/src'],
     }))
@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(ngAnnotate())
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./grails-app/assets/javascripts/agilityblogger'));
+      .pipe(gulp.dest('./grails-app/assets/javascripts/worldmanager'));
   }
 
   bundler.on('update', rebundle);
