@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52541fe0-b7e3-49c3-bffb-1b038e1a6cd9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/campaigns/campaignDataFactoryService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/campaigns/campaigns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/campaigns/campaignsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/contact/contact.tpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/test/campaigns/campaignDataFactoryService.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/test/routing/router-config.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/test/worlds/worldsController.spec.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/agilityblogger/ApplicationController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/agilityblogger/Blog.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/agilityblogger/Comment.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/agilityblogger/Post.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/agilityblogger/User.groovy" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/controllers/agilityblogger/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/worldManager/UrlMappings.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/init/agilityblogger/Application.groovy" afterPath="$PROJECT_DIR$/grails-app/init/worldManager/Application.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/router-config.js" afterPath="$PROJECT_DIR$/frontend/src/router-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/world-manager-app.js" afterPath="$PROJECT_DIR$/frontend/src/world-manager-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/worlds/worldsController.js" afterPath="$PROJECT_DIR$/frontend/src/worlds/worldsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/worlds/worldsHome.tpl.html" afterPath="$PROJECT_DIR$/frontend/src/worlds/worldsHome.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/application.yml" afterPath="$PROJECT_DIR$/grails-app/conf/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/test/campaigns/campaignDataFactoryService.spec.js" afterPath="$PROJECT_DIR$/frontend/test/campaigns/campaignDataFactoryService.spec.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -90,8 +69,8 @@
       <file leaf-file-name="campaignDataFactoryService.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/test/campaigns/campaignDataFactoryService.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="38">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1394,12 +1373,12 @@
       <option name="presentableId" value="Default" />
       <updated>1482943152884</updated>
       <workItem from="1482943156054" duration="2227000" />
-      <workItem from="1482945613113" duration="10228000" />
+      <workItem from="1482945613113" duration="10377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12455000" />
+    <option name="totallyTimeSpent" value="12604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2906" height="1754" extended-state="6" />
@@ -1790,7 +1769,7 @@
         <state relative-caret-position="380">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1849,8 +1828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/test/campaigns/campaignDataFactoryService.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="38">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
