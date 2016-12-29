@@ -5,7 +5,7 @@ import grails.converters.*
 
 class CampaignsController {
 
-    def index() {
+    def list() {
         def json = Campaign.list()
         render json
     }
@@ -13,5 +13,9 @@ class CampaignsController {
     def campaign(){
         def json = Campaign.findByTitle(params.title) as JSON
         render json
+    }
+
+    def newCampaign(){
+
     }
 }

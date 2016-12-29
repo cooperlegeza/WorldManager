@@ -1,10 +1,18 @@
-function CampaignService($q){
+function CampaignService($http){
     'ngInject';
 
     function list(){
-        return $q.when({
 
+        let campaigns = {};
+
+        $http.get({
+            url: "/campaignsList",
+            method: "GET",
+        }).success(function(data) {
+            campaigns = data;
         });
+
+        return campaigns;
     }
 
     return {

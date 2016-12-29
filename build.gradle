@@ -70,6 +70,7 @@ dependencies {
     profile "org.grails.profiles:angular:3.1.1"
     runtime "com.h2database:h2"
     runtime "org.grails.plugins:asset-pipeline"
+    runtime "mysql:mysql-connector-java:5.1.40"
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
     testCompile "org.grails:grails-datastore-rest-client"

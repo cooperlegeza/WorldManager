@@ -1,5 +1,6 @@
 import homeTemplate from './home/home.tpl.html';
-import campaignHomeTemplate from './campaigns/campaignHome.tpl.html';
+import campaignHomeTemplate from './campaigns/templates/campaignHome.tpl.html';
+import campaignNewTemplate from './campaigns/templates/campaignNew.tpl.html';
 import worldsHomeTemplate from './worlds/worldsHome.tpl.html';
 import aboutTemplate from './about/about.tpl.html';
 import contactTemplate from './contact/contact.tpl.html';
@@ -18,6 +19,10 @@ function routesConfig($stateProvider, $urlRouterProvider) {
             url: "/campaigns",
             template: campaignHomeTemplate,
             controller: 'campaignsController as vm',
+        })
+        .state('campaigns.new', {
+            url: "/new",
+            template: campaignNewTemplate,
         })
         .state('worlds', {
             url: "/worlds",

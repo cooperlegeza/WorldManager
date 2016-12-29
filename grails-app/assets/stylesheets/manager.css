@@ -34,3 +34,19 @@ li a:hover {
 #content {
     border: groove;
 }
+
+.campaign-menu {
+    border: groove;
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
