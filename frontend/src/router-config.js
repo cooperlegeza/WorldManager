@@ -20,9 +20,13 @@ function routesConfig($stateProvider, $urlRouterProvider) {
             template: campaignHomeTemplate,
             controller: 'campaignsController as vm',
         })
-        .state('campaigns.new', {
-            url: "/new",
-            template: campaignNewTemplate,
+        .state('newCampaign', {
+            url: "/newCampaign",
+            template: campaignNewTemplate
+        })
+        .state('campaigns.string', {
+            url: "/string",
+            template: "BAXTER NO"
         })
         .state('worlds', {
             url: "/worlds",
