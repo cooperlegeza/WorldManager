@@ -11,11 +11,6 @@ function routesConfig($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');
 
-    lockProvider.init({
-        clientID: 'oJZPYy3heXFxvcOmUd3ZuqPz7nrRH1Eg',
-        domain: 'cooperlegeza.auth0.com'
-    });
-
     $stateProvider
         .state('home', {
             url: '/',

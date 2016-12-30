@@ -5,19 +5,30 @@ import routesConfig from './router-config.js';
 import CampaignService from './campaigns/campaignDataFactoryService';
 import campaignsController from './campaigns/campaignsController';
 import security from './security/security';
-import angularLock from 'angular-lock';
 
 const worldManagerApp = angular.module('worldManagerApp', [
     uiRouter,
-    security,
-    angularLock, angular-jwt
+    security
 ]).controller('worldsController', worldsController)
     .controller('campaignsController', campaignsController)
     .factory('CampaignService', CampaignService)
     .config(routesConfig)
-    .run(function($rootScope, lock, authService) {
-            $rootScope.authService = authService;
-            authService.registerAuthenticationListener();
-            lock.interceptHash();
+    .run(function ($rootScope, $state, loginModal) {
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams) {
+            let requireLogin = toState.data.requireLogin;
+
+            if (requireLogin && typeof $rootScope.currentUser === 'undefined') {
+                event.preventDefault();
+
+                loginModal()
+                    .then(function () {
+                        return $state.go(toState.name, toParams);
+                    })
+                    .catch(function () {
+                        return $state.go('welcome');
+                    });
+            }
+        });
     });
 export default worldManagerApp.name;
