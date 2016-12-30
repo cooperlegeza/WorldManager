@@ -1,17 +1,25 @@
-export default function LoginService($http) {
+export default function LoginService(lock, authManager) {
     'ngInject';
 
-    function signUp(user) {
-        $http({
-            url:"/createAccount",
-            method: "POST",
-            data: user,
-        }).then(
-            function success(response) {
-                return response.data
-            }
-        )
+    function login() {
+        lock.show();
     }
 
-    return ({signUp})
+    function registerAuthenticationListener() {
+        lock.on('authenticated', function (authResult) {
+            localStorage.setItem('id_token', authResult.idToken);
+            authManager.authenticate();
+        });
+    }
+
+    function logout() {
+        localStorage.removeItem('id_token');
+        authManager.unauthenticate();
+    }
+
+    return {
+        login: login,
+        registerAuthenticationListener: registerAuthenticationListener,
+        logout: logout,
+    }
 }

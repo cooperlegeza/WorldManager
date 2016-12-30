@@ -30,6 +30,7 @@
                 <li class="navigation"><a class="navigation" ui-sref="worlds">Worlds</a></li>
                 <li class="navigation"><a class="navigation" ui-sref="about">About</a></li>
                 <li class="navigation"><a class="navigation" ui-sref="newCampaign">New Campaign</a></li>
+                <li class="navigation"><a class="navigation" ui-sref="login">Login</a></li>
             </ul>
         </div>
         <br>
@@ -37,5 +38,6 @@
         <br>
         <div ui-view></div>
         <asset:javascript src="/worldManager/bundle.js" />
+        <script type="text/javascript" src="https://cdn.auth0.com/js/lock/10.6/lock.min.js"></script>
     </body>
 </html>

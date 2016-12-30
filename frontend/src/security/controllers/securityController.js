@@ -1,4 +1,4 @@
-import LoginService from './services/loginService.js';
+import LoginService from '../services/loginService.js';
 
 export default function SecurityController($scope){
     'ngInject';

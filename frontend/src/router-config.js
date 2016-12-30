@@ -4,11 +4,17 @@ import campaignNewTemplate from './campaigns/templates/campaignNew.tpl.html';
 import worldsHomeTemplate from './worlds/worldsHome.tpl.html';
 import aboutTemplate from './about/about.tpl.html';
 import contactTemplate from './contact/contact.tpl.html';
+import loginTemplate from './security/loginMode.tpl.html';
 
 function routesConfig($stateProvider, $urlRouterProvider) {
     'ngInject';
 
     $urlRouterProvider.otherwise('/');
+
+    lockProvider.init({
+        clientID: 'oJZPYy3heXFxvcOmUd3ZuqPz7nrRH1Eg',
+        domain: 'cooperlegeza.auth0.com'
+    });
 
     $stateProvider
         .state('home', {
@@ -61,6 +67,11 @@ function routesConfig($stateProvider, $urlRouterProvider) {
             data: {
                 requireLogin: false,
             }
+        })
+        .state('login', {
+            url:'/login',
+            controller: 'loginController as vm',
+            template: loginTemplate
         });
 }
 
