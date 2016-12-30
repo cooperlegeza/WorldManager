@@ -29,7 +29,7 @@
                 <li class="navigation"><a class="navigation" ui-sref="campaigns">Campaigns</a></li>
                 <li class="navigation"><a class="navigation" ui-sref="worlds">Worlds</a></li>
                 <li class="navigation"><a class="navigation" ui-sref="about">About</a></li>
-                <li class="navigation"><a class="navigation" ui-sref="newCampaign">new String</a></li>
+                <li class="navigation"><a class="navigation" ui-sref="newCampaign">New Campaign</a></li>
             </ul>
         </div>
         <br>

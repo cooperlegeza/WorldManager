@@ -14,32 +14,53 @@ function routesConfig($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/',
             template: homeTemplate,
+            data: {
+                requireLogin: false,
+            }
         })
         .state('campaigns', {
             url: "/campaigns",
             template: campaignHomeTemplate,
             controller: 'campaignsController as vm',
+            data: {
+                requireLogin: false,
+            }
         })
         .state('newCampaign', {
             url: "/newCampaign",
-            template: campaignNewTemplate
+            template: campaignNewTemplate,
+            data: {
+                requireLogin: true,
+            }
         })
         .state('campaigns.string', {
             url: "/string",
-            template: "BAXTER NO"
+            template: "BAXTER NO",
+            data: {
+                requireLogin: true,
+            }
         })
         .state('worlds', {
             url: "/worlds",
             template: worldsHomeTemplate,
             controller: 'worldsController as vm',
+            data: {
+                requireLogin: false,
+            }
         })
         .state('about', {
             url: "/about",
             template: aboutTemplate,
+            data: {
+                requireLogin: false,
+            }
         })
         .state('contact', {
             url: "/contact",
             template: contactTemplate,
+            data: {
+                requireLogin: false,
+            }
         });
 }
 

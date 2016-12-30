@@ -1,0 +1,5 @@
+package worldManager
+
+
+class AccountCreator {
+}
